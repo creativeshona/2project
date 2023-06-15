@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/2project/static/css/main.00ac4fed.css",
+    "main.js": "/2project/static/js/main.ea0ed74b.js",
+    "static/media/pro-1.png": "/2project/static/media/pro-1.a00aa9564a539ac56239.png",
+    "static/media/project-2.png": "/2project/static/media/project-2.11eba71749b9e29802f7.png",
+    "static/media/react.jpg": "/2project/static/media/react.875d3a954a376602c01a.jpg",
+    "static/media/back3.webp": "/2project/static/media/back3.abaf5f0343de53be260a.webp",
+    "static/media/html.jpg": "/2project/static/media/html.f938cee935e98f7236f9.jpg",
+    "static/media/bootstrap.png": "/2project/static/media/bootstrap.32c248432e2b86298964.png",
+    "static/media/girl.png": "/2project/static/media/girl.8555191f87e18a9fb8a2.png",
+    "static/media/css.webp": "/2project/static/media/css.e27fc8de656357a336ef.webp",
+    "static/media/bulb.png": "/2project/static/media/bulb.4b446ebdb3672e35f90d.png",
+    "static/media/jquery.png": "/2project/static/media/jquery.7723bb6818dd56bdfe78.png",
+    "index.html": "/2project/index.html",
+    "main.00ac4fed.css.map": "/2project/static/css/main.00ac4fed.css.map",
+    "main.ea0ed74b.js.map": "/2project/static/js/main.ea0ed74b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00ac4fed.css",
+    "static/js/main.ea0ed74b.js"
+  ]
+}
