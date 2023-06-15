@@ -1,0 +1,301 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 50rem;
+    width: 100%;
+    background-size: 100% 120%;
+    padding: 5rem;
+
+}
+
+.inner-main {
+    position: relative;
+    color: white;
+    width: 70%;
+    padding: 20px;
+    font-size: 3rem;
+    top: 8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+
+
+.inner-main span {
+    color: black;
+    font-weight: 900;
+    border-radius: 5px;
+    padding: 10px;
+    background: cyan;
+    margin-right: 10px;
+    font-size: 2rem;
+    /* text-shadow: 0px 0px 6px black; */
+}
+
+.hello {
+    font-size: 2rem;
+}
+
+.inner-main :nth-child(3) {
+    font-size: 2rem;
+}
+
+.inner-main .cv {
+    display: flex;
+
+}
+
+.inner-main .cv a {
+    background-color: cyan;
+    font-size: 2rem;
+    border-radius: 5px;
+    z-index: 4;
+    position: relative;
+    overflow: hidden;
+    margin: 30px 30px 0px 0px;
+    height: 5rem;
+    width: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: cyan; */
+    animation: cv 5s infinite linear;
+}
+
+
+
+
+@keyframes cv {
+    0% {
+        color: rgb(241, 54, 54);
+    }
+
+    25% {
+        color: #8853ea;
+    }
+
+    50% {
+        color: #dbea53;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+.inner-main .cv a::before {
+    content: '';
+    position: absolute;
+    background-color: cyan;
+    width: 15rem;
+    height: 4rem;
+    text-align: center;
+    z-index: -3;
+}
+
+.inner-main p a::after {
+    content: '';
+    position: absolute;
+    width: 25rem;
+    height: 30px;
+    background: linear-gradient(to bottom, black, transparent), linear-gradient(to top, transparent, cyan);
+    box-shadow: 0px 0px 37px 10px black;
+    margin: 10px;
+    z-index: -4;
+    animation: border 10s infinite linear;
+
+}
+
+@keyframes border {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+
+        transform: rotate(360deg);
+    }
+}
+
+.wrapper:hover{ 
+    /* width: 300px; */
+    position: relative; 
+    /* top: 3rem;
+    right: 2rem; */
+
+    transform: rotateZ(0deg) rotateX(-90deg) rotateY(360deg)
+               rotateX(90deg) rotateY(360deg);
+
+}
+
+
+
+
+@media screen and (max-width:1550px){
+   
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .inner-main .cv a {
+        width: 10rem;
+        font-size: 1rem;
+    }
+
+    .inner-main {
+        /* width: 50%; */
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .parallax .plx{
+        max-width: 66rem;
+    }
+    .inner-main .cv a {
+        width: 8rem;
+        font-size: 1rem;
+    }
+    .inner-main{
+        font-size: 2rem;
+        left: -2rem;
+    }
+
+    .main {
+        justify-content: space-between;
+
+    }
+
+   
+}
+
+@media screen and (max-width: 900px) {
+/* .main {
+        background: url(./Images/back1.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+    } */
+    .parallax .plx{
+        max-width: 58rem;
+    }
+
+    .inner-main {
+        /* font-size: 2rem; */
+        /* top: 10rem; */
+        left: 2rem;
+    }
+
+    .inner-main span {
+        font-size: 3rem;
+    }
+
+    .inner-main :nth-child(3) {
+        font-size: 1rem;
+    }
+
+
+    .inner-main .cv a::before {
+        width: 12rem;
+        height: 4rem;
+    }
+
+
+
+}
+
+@media screen and (max-width:875px) {
+     .parallax .plx{
+        /* max-width: 58rem; */
+        /* height: 20rem; */
+    }
+    .main {
+        /* display: flex; */
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inner-main {
+        top: 0rem;
+        width: 100%;
+    }
+
+    .inner-main .cv a {
+        height: 3rem;
+    }
+
+    .inner-main .cv a::before {
+        /* background-color: rgb(255, 115, 0); */
+        width: 6rem;
+        height: 2rem;
+        border-radius: 5px;
+
+    }
+
+    .inner-main p a::after {
+        width: 25rem;
+        height: 30px;
+        background-color: #8853ea;
+
+    }
+
+
+}
+
+@media screen and (max-width:660px) {
+    
+.inner-main{
+    font-size: 1.5rem;
+    left: -3rem;
+    padding: 0;
+}
+
+}
+
+
+@media screen and (max-width:500px) {
+    .parallax .plx img{
+        max-width: 32rem;
+        max-height: 32rem;
+    }
+    .main{
+        padding:0;
+    }
+    .inner-main{
+        font-size: 1.5rem;
+        left: 3rem;
+        top: 3rem;
+        padding: 0;
+    }
+    .inner-main span{
+        font-size: 2rem;
+    }
+    .inner-main .cv a{
+        margin: 25px 10px 0px 0px;
+        font-size: 0.7rem;
+    }
+    .moving-box{
+        background-color: #131313;
+        width: 100%;
+        height: 14rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 20px 1px 20px 10px, inset 0px 20px 10px 0px;
+    
+    }
+    
+    }
+

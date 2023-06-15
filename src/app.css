@@ -1,0 +1,27 @@
+.footer{
+    background-color: black;
+    color: white;
+    height: 10rem;
+    display: flex;
+    /* padding: 30px; */
+    justify-content: space-around;
+    align-items: center;
+}
+.footer img{
+    width: 50px;
+}
+.footerlinked{
+    display: flex;
+    align-items: center;
+    color: rgb(181, 178, 178);
+    justify-content: center;
+    gap:12px;
+}
+.footer-icons{
+    display: flex;
+    gap:10px;
+}
+
+
+
+
